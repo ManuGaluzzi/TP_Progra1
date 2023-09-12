@@ -1,4 +1,8 @@
+*{box-sizing: border-box;}
 
+body{
+    background-color:
+}
 
 .carteleras{
     display: flex;
@@ -19,4 +23,18 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.juan {
+    padding: 10px;
+    background-color:rgb(146, 21, 73);
+    color: white;
+    border-radius: 25%;
+    flex-wrap: wrap;
 }
