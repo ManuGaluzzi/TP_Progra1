@@ -1,7 +1,8 @@
 *{box-sizing: border-box;}
 
 body{
-    background-color:
+    color: white;
+    background-color:rgb(65, 6, 60)
 }
 
 .carteleras{
@@ -10,6 +11,7 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .padre{
@@ -64,3 +66,13 @@ body{
     flex-direction: row;
     justify-content: end;
 }
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    color:black;
+    border-radius: 25%;
+}
+
