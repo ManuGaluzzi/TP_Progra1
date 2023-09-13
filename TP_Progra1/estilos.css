@@ -12,6 +12,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-decoration: none;
+
 }
 
 .padre{
@@ -71,8 +72,33 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(170, 28, 158);
     color:black;
     border-radius: 25%;
+
+}
+/* comentario: el css para el detalle de pelicula */
+
+.titulo_principal{
+    font-size: x-large;
+
 }
 
+.marco{
+    display: flex;
+
+}
+.detalle{
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+.fotos_detalles{
+    flex-direction: row;
+    width: 300px;
+    height: 350px;
+
+}
