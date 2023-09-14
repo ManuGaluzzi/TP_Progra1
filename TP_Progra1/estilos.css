@@ -61,6 +61,11 @@ body{
     flex-direction: row;
     justify-content: center;
     }
+.icono{
+    display: flex;
+    width: 20px;
+    height: 27px;
+}
 
 .nombres{
     display: flex;
