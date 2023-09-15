@@ -107,3 +107,24 @@ body{
     height: 350px;
 
 }
+
+.titulo_genero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(170, 28, 158);
+    color:black;
+    border-radius: 25%;
+
+}
+
+.detlalle_genero{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+fotter{
+    
+}

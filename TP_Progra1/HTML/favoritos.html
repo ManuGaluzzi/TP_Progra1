@@ -7,25 +7,50 @@
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
-<header>
-<nav>
-    <ul class="navegador">
-        <li>
-            <a class="juan" href="../HTML/Index.html">HOME</a>
-        </li>
-        <li>
-            <a class="juan" href="../HTML/favoritos.html">FAVORITOS</a>
-        </li>
-        <li> 
-            <a class="juan" href="../HTML/generos.html">GENERO</a>
-        </li>
+    <header>
+        <form class="buscador" action="./resultados.html" method="get">
+            <input name="text" type="search" value="buscador">
+        </form>
+        
+    
+     
+    <nav>
+        <ul class="navegador">
+            <li>
+                <a class="juan" href="../HTML/Index.html">HOME</a>
+            </li>
+            <li>
+                <a class="juan" href="../HTML/favoritos.html">FAVORITOS</a>
+            </li>
+            <li> 
+                <a class="juan" href="../HTML/generos.html">GENERO</a>
+            </li>
+    
+        </ul>
+    </nav>
 
-    </ul>
-</nav>
-<img src="../Fotos Proyecto/logo.png" alt="logo" class="logo">
-</header>   
+    <img src="../Fotos Proyecto/logo.png" alt="logo" class="logo">
+
+    </header>
 
 <h1 class="titulo_principal">FAVORITOS</h1>
+
+<section class="padre">
+    <article class="carteleras">
+        <h4> Sound of fredom </h4>
+        <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/fredom.jpg" alt=""  class="Fotos"></a>   
+    </article>
+
+    <article class="carteleras">
+        <h4>El robo del siglo</h4>
+        <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/robo.jpg" alt=""  class="Fotos"></a>
+    </article>
+ 
+    <article class="carteleras">
+         <h4> Son como niños</h4>
+         <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/ninos.jpg" alt=""  class="Fotos"></a>
+     </article>
+ </section>
 
 <footer>
     <nav>
@@ -44,4 +69,3 @@
     </nav>
 </footer>
 </body>
-</html>
