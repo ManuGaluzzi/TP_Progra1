@@ -125,3 +125,7 @@ body{
 
 }
 
+a{
+    text-decoration: underline;
+    color: white;
+}
