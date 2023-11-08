@@ -7,41 +7,68 @@
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
-<header>
-<nav>
-    <ul class="navegador">
-        <li>
-            <a class="juan" href="../HTML/Index.html">HOME</a>
-        </li>
-        <li>
-            <a class="juan" href="../HTML/favoritos.html">FAVORITOS</a>
-        </li>
-        <li> 
-            <a class="juan" href="../HTML/generos.html">GENERO</a>
-        </li>
+    <header>
+        <form class="buscador" action="./buscador.html" method="get">
+            <input name="text" type="search" value="buscador">
+        </form>
+        
+    
+     
+    <nav>
+        <ul class="navegador">
+            <li>
+                <a class="juan" href="../HTML/Index.html">HOME</a>
+            </li>
+            <li>
+                <a class="juan" href="../HTML/favoritos.html">FAVORITOS</a>
+            </li>
+            <li> 
+                <a class="juan" href="../HTML/generos.html">GENERO</a>
+            </li>
+    
+        </ul>
+    </nav>
 
-    </ul>
-</nav>
-<img src="../Fotos Proyecto/logo.png" alt="logo" class="logo">
-</header>   
+    <div class="logo">
+        <img src="../Fotos Proyecto/logo.png" alt="logo" >
+        <h1> Super-Movies</h1>
+    </div>
 
-<h1 class="titulo_principal">FAVORITOS</h1>
+    </header>
+
+<h2 class="titulo_principal">FAVORITOS</h2>
+
+<section class="padre">
+    <article class="carteleras">
+        <h3> Sound of fredom </h3>
+        <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/fredom.jpg" alt=""  class="Fotos"></a>   
+    </article>
+
+    <article class="carteleras">
+        <h3>El robo del siglo</h3>
+        <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/robo.jpg" alt=""  class="Fotos"></a>
+    </article>
+ 
+    <article class="carteleras">
+         <h3> Son como niños</h3>
+         <a class="detalle" href="./detalles_movies.html"><img src="../Fotos Proyecto/ninos.jpg" alt=""  class="Fotos"></a>
+     </article>
+ </section>
 
 <footer>
     <nav>
         <ul class="navegador">
             <li>
-                <a class="juan" href="">HOME</a>
+                <a class="juan" href="./Index.html">HOME</a>
             </li>
             <li>
-                <a class="juan" href="">FAVORITOS</a>
+                <a class="juan" href="./favoritos.html">FAVORITOS</a>
             </li>
             <li> 
-                <a class="juan" href="">GENERO</a>
+                <a class="juan" href="./generos.html">GENERO</a>
             </li>
         </ul>
     <h4 class="nombres">Antonia Silva, Manuel Galuzzi y Pedro Keller</h4>
     </nav>
 </footer>
 </body>
-</html>
