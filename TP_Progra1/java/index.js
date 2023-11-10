@@ -55,8 +55,9 @@ fetch (urlvistas)
         cartelerasElements.forEach((element, index) => {
             element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].url}" target="_blank">${data.results[i].title}</a>
             <p>${data.results[i].release_date}</p>`;
-        i += 1;     
+        i += 1;          
         })}});
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
