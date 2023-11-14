@@ -18,6 +18,7 @@ function displayData(data) {
             element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].url}" target="_blank">${data.results[i].title}</a>
             <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""><p>${data.results[i].release_date}</p>`;
             i += 1;
+            
     
     })}}
 
