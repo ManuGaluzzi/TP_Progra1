@@ -1,3 +1,6 @@
+
+
+
 function fetchData() {
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=f534b4f9cb5b663c994b7b752531f5a9')
         .then(response => response.json())
@@ -13,8 +16,9 @@ function displayData(data) {
         const cartelerasElements = document.querySelectorAll('.carteleras1');
         cartelerasElements.forEach((element, index) => {
             element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].url}" target="_blank">${data.results[i].title}</a>
-            <p>${data.results[i].release_date}</p>`;
+            <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""><p>${data.results[i].release_date}</p>`;
             i += 1;
+    
     })}}
 
 
@@ -35,7 +39,7 @@ fetch (urlseries)
         const cartelerasElements = document.querySelectorAll('.carteleras2');
         cartelerasElements.forEach((element, index) => {
             element.innerHTML = `<a href="../HTML/detalles_series.html?id=${data.results[i].url}" target="_blank">${data.results[i].name}</a>
-            <p>${data.results[i].first_air_date}</p>`;
+            <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""><p>${data.results[i].first_air_date}</p>`;
             i += 1;
         })}});
 
@@ -54,7 +58,7 @@ fetch (urlvistas)
         const cartelerasElements = document.querySelectorAll('.carteleras3');
         cartelerasElements.forEach((element, index) => {
             element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].url}" target="_blank">${data.results[i].title}</a>
-            <p>${data.results[i].release_date}</p>`;
+            <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="">s<p>${data.results[i].release_date}</p>`;
         i += 1;          
         })}});
 
