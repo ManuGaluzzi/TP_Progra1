@@ -1,7 +1,6 @@
-
-let USP = new URLSearchParams(qs);
-
 let locsearch = location.search;
+
+let USP = new URLSearchParams(locsearch);
 
 
 let buscar = USP.get("busqueda");
@@ -15,24 +14,12 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${busc
         return response.json();
     })
     .then(function (data) {
-        
         console.log(data.results);
-
-  
         let movies = data.results || [];
-
         let section = document.querySelector(".padre");
         let addedMovie = document.querySelector(".carteleras");
         let allMoviesHTML = "";
 
-        
-        if (movies.length === 0) {
-            document.querySelector(".Texto_buscador").innerText = "No hay resultados para su búsqueda";
-        } else {
-            document.querySelector(".Texto_buscador").innerText = "Resultados de búsqueda para: " + buscar;
-        }
-
-        
         for (let i = 0; i < movies.length; i++) {
             allMoviesHTML += `<article class="carteleras">
                             <a href="./detalles_movies.html?idPelicula=${movies[i].id}">
@@ -44,11 +31,4 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${busc
         section.innerHTML = allMoviesHTML;
         addedMovie.innerText = buscar;
     });
-
-
-
-
-
-
-
   

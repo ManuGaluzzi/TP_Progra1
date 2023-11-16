@@ -8,7 +8,7 @@ fetch (urlgen)
     console.log(data);
     for (let i = 0; i < data.genres.length; i++) {
         console.log(data.genres[i].name);
-        const cartelerasElements = document.querySelectorAll('.titulo_genero');
+        const cartelerasElements = document.querySelectorAll('.titulo_genero2');
         cartelerasElements.forEach((element, index) => {
             element.innerHTML = `<a href="../HTML/detalles_genero.html?id=${data.genres[i].name}" target="_blank">${data.genres[i].name}</a>`;
         i += 1;          
