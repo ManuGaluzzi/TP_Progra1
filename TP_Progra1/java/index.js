@@ -8,7 +8,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apikey}`)
         console.log(data);
         let pelisvist = document.querySelector(".carteleraPadre1")
         let pelis = '';
-        for (let i =0; i < data.results.length; i++){
+        for (let i =0; i < 5; i++){
             pelis += `<article>
                         <p><a href="../HTML/detalles_movies.html?id=${data.results[i].id}"target="_blank">${data.results[i].title} </a></p>
                         <a href="../HTML/detalles_movies.html"><img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
@@ -35,7 +35,7 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apikey}`)
         console.log(data);
         let pelisvist = document.querySelector(".carteleraPadre2")
         let pelis = '';
-        for (let i =0; i < data.results.length; i++){
+        for (let i =0; i < 5; i++){
             pelis+= `<article> 
             <p><a href="../HTML/detalles_series.html?id=${data.results[i].id}"target="_blank">${data.results[i].name}</a></p> 
             <a href="../HTML/detalles_series.html"><img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
@@ -63,7 +63,7 @@ fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${apikey}`)
         console.log(data);
         let pelisvist = document.querySelector(".carteleraPadre3")
         let pelis = [];
-        for (let i =0; i < data.results.length; i++){
+        for (let i =0; i < 5; i++){
             pelis+= `<article>
              <p><a href="../HTML/detalles_movies.html?id=${data.results[i].id}"target="_blank">${data.results[i].title}</a></p> 
 
