@@ -29,6 +29,5 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${busc
         }
 
         section.innerHTML = allMoviesHTML;
-        addedMovie.innerText = buscar;
     });
   

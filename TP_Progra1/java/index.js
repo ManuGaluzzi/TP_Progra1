@@ -15,7 +15,7 @@ function displayData(data) {
         console.log(data.results[i].title);
         const cartelerasElements = document.querySelectorAll('.carteleras1');
         cartelerasElements.forEach((element, index) => {
-            element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].url}" target="_blank">${data.results[i].title}</a>
+            element.innerHTML = `<a href="../HTML/detalles_movies.html?id=${data.results[i].id}" target="_blank">${data.results[i].title}</a>
             <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""><p>${data.results[i].release_date}</p>`;
             i += 1;
             
@@ -39,7 +39,7 @@ fetch (urlseries)
         console.log(data.results[i].name);
         const cartelerasElements = document.querySelectorAll('.carteleras2');
         cartelerasElements.forEach((element, index) => {
-            element.innerHTML = `<a href="../HTML/detalles_series.html?id=${data.results[i].url}" target="_blank">${data.results[i].name}</a>
+            element.innerHTML = `<a href="../HTML/detalles_series.html?id=${data.results[i].id}" target="_blank">${data.results[i].name}</a>
             <img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""><p>${data.results[i].first_air_date}</p>`;
             i += 1;
         })}});
