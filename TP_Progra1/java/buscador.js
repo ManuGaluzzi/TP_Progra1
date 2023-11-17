@@ -2,7 +2,6 @@ let locsearch = location.search;
 
 let USP = new URLSearchParams(locsearch);
 
-
 let buscar = USP.get("busqueda");
 
 

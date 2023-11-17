@@ -6,12 +6,24 @@ fetch (urlgen)
 })
 .then(function(data){
     console.log(data);
-    for (let i = 0; i < data.genres.length; i++) {
-        console.log(data.genres[i].name);
-        const cartelerasElements = document.querySelectorAll('.titulo_genero');
-        cartelerasElements.forEach((element, index) => {
-            element.innerHTML = `<a href="../HTML/detalles_genero.html?id=${data.genres[i].name}" target="_blank">${data.genres[i].name}</a>`;
-        i += 1;          
-        })}});
+    let  = document.querySelector(".carteleraPadre1")
+    let pelis = '';
+    for (let i =0; i < 5; i++){
+            pelis += `<article>
+                        <p><a href="../HTML/detalles_movies.html?id=${data.results[i].id}"target="_blank">${data.results[i].title} </a></p>
+                        <a href="../HTML/detalles_movies.html"><img src=" https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                        <p>${data.results[i].release_date}</p>
+                
+                
+            </article>`
+        }
+        pelisvist.innerHTML=pelis
+       
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+
+
 
 
