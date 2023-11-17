@@ -1,9 +1,13 @@
-let qs = location.search;
-let qsObj = new URLSearchParams(qs);
-let ID = qsObj.get("id");
+let querystring = location.search;
+let queryresult = new URLSearchParams(querystring);
+let ID = queryresult.get("id");
 let apiKey = "f534b4f9cb5b663c994b7b752531f5a9";
 
-fetch(`https://api.themoviedb.org/3/movie/${ID}?api_key=${apiKey}`) 
+fetch(`https://api.themoviedb.org/3/movie/${ID}?api_key=${apiKey}`)
+.then(function(response){
+
+    return response.json()
+})
     .then(function(data){
         console.log(data)
         let nomPelicula = document.querySelector(".carteleras");

@@ -6,7 +6,20 @@ body{
    
 }
 
-.carteleras3{
+.carteleraPadre3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+
+    
+
+}
+
+.carteleraPadre2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -18,7 +31,8 @@ body{
 
 }
 
-.carteleras2{
+
+.carteleraPadre1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -26,21 +40,8 @@ body{
     list-style: none;
     text-decoration: none;
     align-items: center;
-
-
 }
 
-.carteleras1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    list-style: none;
-    text-decoration: none;
-    align-items: center;
-
-
-}
 
 
 
@@ -112,7 +113,6 @@ body{
     border-radius: 25%;
 
 }
-/* comentario: el css para el detalle de pelicula */
 
 .titulo_principal{
     font-size: x-large;
@@ -147,3 +147,27 @@ img{
     height: 200px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    margin: 20px;
+    text-align: center;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+article img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.juan:hover {
+    color: white;
+}
